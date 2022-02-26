@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script>
+        function fun() {
+        alert("Logged in");
+        }
+        </script>
+
+    <style>
+        body{
+            width: 100%;
+            background: linear-gradient(45deg, rgba(53,174,229) 0%, rgba(125,108,240) 35%, rgba(190,54,248) 100%);
+        }
+        .content{
+            width: 20%;
+            height: 83vh;
+            background-color: white;
+            position: absolute;
+            border-radius: 10px;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            padding: 10px 35px 20px;           
+        }
+        h1{
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin-bottom: 10%;
+        }
+        button{
+            width: 80%;
+            border-radius: 20px;
+            height: 38px;
+            background: linear-gradient(90deg, rgba(243,7,253) 10%, rgba(107,111,236) 60%, rgba(14,210,226) 100%);
+            border: none;
+            color: white;
+            position: absolute;
+            left: 11%;
+            font-family: 'Poppins', sans-serif;
+
+           
+        }
+        input,select{
+            width: 100% ;
+            height: 30px;
+            text-align:left ;
+            border:none ;
+            border-bottom: 1px solid;
+            font-family: 'Poppins', sans-serif;
+            color: #000;
+        }
+        input:focus{
+            outline: none;
+
+        }
+        .message::placeholder{
+            position: absolute;
+            
+        }
+        label{
+            font-family: 'Poppins', sans-serif;
+            font-size: 65%;
+        }
+               
+        
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="main">
+            <h1>Say Hello!</h1>
+            <div class="form-group">
+                <label>Your Name</label>
+        <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="form-group" style="margin-top:15px">
+                <label>Email</label>
+        <input type="email" placeholder="Enter your email address">        
+    </div>
+    <div class="form-group" style="margin-top:15px">
+        <label  for="chooseservices">Needed Services</label>
+        <select>
+            <option selected ">Choose Services</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+        </select>  
+      </div>
+      <div class="form-group" style="margin-top:15px">
+            <label for="budget">Select Budget</label>
+            <select>
+            <option selected>Select Budget</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>  
+      </div>
+      <div class="form-group" style="margin-top:15px">
+        <label>Message</label>
+        <input class="message" style="height: 80px; " type="text" placeholder="Your message here...">
+      </div>
+        </div>
+        
+        <button onclick = "fun()" style="margin-top:15px">Submit <i class="fa-solid fa-arrow-right-long"></i></button>
+        
+    
+</div>
+</body>
+</html>
